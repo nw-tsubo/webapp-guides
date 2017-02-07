@@ -103,6 +103,16 @@ clock
       
       <h3>ライブコーディング</h3>
       <p>ここから先はライブコーディングしながら説明します</p>
+      
+      <pre class="code">
+# 修正箇所
+
+lesson/framework/clock
+  src
+    routes.php
+  tamplates
+    omikuji.phtml
+</pre>
     </section>
     
     <section id="exercise">
@@ -112,10 +122,27 @@ clock
       <p>上記の時報サービスを参考におみくじアプリを作ってみよう</p>
       <a href="omikuji/public">おみくじアプリ</a>
       
+      <h3>プロジェクト作成</h3>
+      <pre class="code">
+# Terminal を開いて     
+# composer コマンドを使って slim プロジェクトを作成
+
+$ cd sandbox/framework
+$ composer create-project slim/slim-skeleton omikuji
+...
+$ cd omikuji
+$ ls -l
+...
+</pre>
+      
       <h3>回答</h3>
-      <p>以下のディレクトリを御覧ください</p>
+      <p>以下のファイルを御覧ください</p>
       <pre class="code">
 lesson/framework/omikuji
+  src
+    routes.php
+  tamplates
+    omikuji.phtml
 </pre>
     </section>
     

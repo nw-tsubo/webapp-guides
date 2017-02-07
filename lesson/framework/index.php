@@ -154,7 +154,6 @@ lesson/framework/omikuji
       <ul>
         <li>routes.php に記述されているビジネスロジックをモデルクラスに切り出す</li>
         <li>PHP のネームスペースを使って、クラスを参照する</li>
-        <li>routes.php に記述されているコントローラのロジックをコントローラクラスに切り出す</li>
       </ul>
       
       <h3>解説</h3>

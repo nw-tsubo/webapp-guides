@@ -57,6 +57,7 @@
     <section id="description">
       <h2>フレームワークを使った Web アプリケーション</h2>
       
+      <h3>時報サービス作成</h3>
       <p>
         時報サービスをフレームワークを使って作ってみましょう。<br>
         今回は最もシンプルな軽量フレームワークである Slim を使用して作ります。
@@ -100,7 +101,7 @@ clock
 └── vendor                PHP パッケージの格納ディレクトリ
 </pre>
       
-      <h3>時報サービス作成</h3>
+      <h3>ライブコーディング</h3>
       <p>ここから先はライブコーディングしながら説明します</p>
     </section>
     
@@ -112,9 +113,30 @@ clock
       <a href="omikuji/public">おみくじアプリ</a>
       
       <h3>回答</h3>
-      <p>回答は以下のディレクトリを御覧ください</p>
+      <p>以下のディレクトリを御覧ください</p>
       <pre class="code">
 lesson/framework/omikuji
+</pre>
+    </section>
+    
+    <section id="refactoring">
+      <h2>リファクタリング</h2>
+      <p>上記のおみくじアプリをリファクタリング（体質改善）します</p>
+      
+      <h3>ポイント</h3>
+      <ul>
+        <li>routes.php に記述されているビジネスロジックをモデルクラスに切り出す</li>
+        <li>PHP のネームスペースを使って、クラスを参照する</li>
+        <li>routes.php に記述されているコントローラのロジックをコントローラクラスに切り出す</li>
+      </ul>
+      
+      <h3>解説</h3>
+      <p>回答のソースコードを見ながら解説します</p>
+      
+      <h3>回答</h3>
+      <p>以下のディレクトリを御覧ください</p>
+      <pre class="code">
+lesson/framework/refactoring
 </pre>
     </section>
     

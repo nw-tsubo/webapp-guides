@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS使用後」ページ | CSS入門</title>
+
+  <!-- CSS の定義 -->
+  <style type="text/css">
+    /* セレクタに id を使用した例 */
+    #wrapper {
+      width: 80%;
+      margin: 0 auto 50px; /* 上 左右 下（左右autoでセンターリング） */
+    }
+    
+    /* セレクタに HTMLタグ を使用した例 */
+    h2 {
+      margin-top: 40px;
+      border-bottom: 5px solid #008b8b; /* 線の太さ 線の種類 色 */
+    }
+    
+    /* セレクタに class を使用した例 */
+    .box {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid silver;   /* 線の太さ 線の種類 色 */
+      border-radius: 10px;        /* 枠の角を丸める */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div>
+      <a href="index.php#sample">CSS入門</a> |
+      <a href="before.html">CSS使用前ページ</a> |
+      <a href="after.html">CSS使用後ページ</a>
+    </div>
+
+    <hr />
+
+    <h1>CSSを使ったページ</h1>
+    
+    <p>HTML ソースオードを表示してみましょう</p>
+
+    <h2>見出し１</h2>
+    <div class="box">
+      <p>ほげ、ふが</p>
+    </div>
+
+    <h2>見出し２</h2>
+    <div class="box">
+      <p>ぷよ、ぴよ</p>
+    </div>
+
+  </div><!-- #wrapper-->
+</body>
+</html>

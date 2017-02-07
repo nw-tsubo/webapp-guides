@@ -1,0 +1,43 @@
+/* セレクタに id を使用した例 */
+#wrapper {
+  width: 80%;
+  margin: 0 auto 50px; /* 上 左右 下（左右autoでセンターリング） */
+}
+
+/* セレクタに HTMLタグ を使用した例 */
+h2 {
+  margin-top: 40px;
+  border-bottom: 5px solid #008b8b; /* 線の太さ 線の種類 色 */
+}
+
+h3 {
+  margin-top: 30px;
+  border-bottom: 3px solid #add8e6; /* 線の太さ 線の種類 色 */
+}
+
+/* セレクタに class を使用した例 */
+.box {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid silver;   /* 線の太さ 線の種類 色 */
+  border-radius: 10px;        /* 枠の角を丸める */
+}
+
+pre, code {
+  font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
+  line-height: 1.2;
+}
+
+.code {
+  background-color: #ebebeb;  /* 背景色 */
+  padding: 10px;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+/* hilight.js カスタマイズ */
+.hljs {
+  font-size: 16px;
+}

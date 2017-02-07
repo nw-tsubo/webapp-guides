@@ -163,6 +163,11 @@ lesson/framework/omikuji
       <p>以下のディレクトリを御覧ください</p>
       <pre class="code">
 lesson/framework/refactoring
+  src
+    Model
+      Omikuji.php
+    routes.php
+  composer.json
 </pre>
     </section>
     

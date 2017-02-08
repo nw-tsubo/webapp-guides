@@ -178,15 +178,6 @@ lesson/framework/refactoring
     </section>
     
     <section>
-      <h2>今後に向けて</h2>
-      <p>
-        今回はシンプルに学習するため、軽量フレームワーク Slim を使用しましたが、
-        実際の Web アプリケーション開発では、Ruby on Rails や Laravel 等
-        フルスタック（All in one）フレームワークを使うことをお勧めします。
-      </p>
-    </section>
-    
-    <section>
       <h2>参考ページ</h2>
       <ul>
         <li><a href="https://laravel.com/">Laravel 公式サイト</a></li>

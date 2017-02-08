@@ -14,6 +14,7 @@
     只今の時刻は 
     <span class="time">
       <!-- ここが PHP のプログラム -->
+      <?php date_default_timezone_set('Asia/Tokyo'); ?>
       <?= date('H:i:s'); ?>
     </span> 
     です

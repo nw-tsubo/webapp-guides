@@ -50,7 +50,6 @@
         <li><a href="https://laravel.com/">Laravel (PHP)</a></li>
         <li><a href="https://symfony.com/">Symfony (PHP)</a></li>
         <li><a href="https://cakephp.org/jp">CakePHP (PHP)</a></li>
-        <li><a href="https://www.slimframework.com/">Slim (PHP)</a></li>
       </ul>
     </secton>
     
@@ -67,38 +66,31 @@
       <h3>プロジェクト作成</h3>
       <pre class="code">
 # Terminal を開いて     
-# composer コマンドを使って slim プロジェクトを作成
+# composer コマンドを使って laravel プロジェクトを作成
 
 $ cd sandbox
 $ mkdir framework
 $ cd framework
-$ composer create-project slim/slim-skeleton clock
+$ composer create-project --prefer-dist laravel/laravel clock
 ...
 $ cd clock
 $ ls -l
 ...
 </pre>
 
-      <h3>ディレクトリ構成</h3>
+      <h3>ディレクトリ構成（主な物）</h3>
       <pre class="code">
 clock
-├── CONTRIBUTING.md
-├── README.md
-├── composer.json         このプロジェクトで使っている PHP のパッケージ
-├── composer.lock
-├── logs
-├── phpunit.xml
-├── public                ドキュメントルート
-│   └── index.php           Slim の起動ファイル
-├── src                   ソースコードの格納ディレクトリ
-│   ├── dependencies.php
-│   ├── middleware.php
-│   ├── routes.php          ルーティング＆コントローラー
-│   └── settings.php
-├── templates             ビューの格納ディレクトリ
-│   └── index.phtml         ルートページのビュー
-├── tests
-└── vendor                PHP パッケージの格納ディレクトリ
+├── app                         アプリケーションのソースコードを格納するディレクトリ
+│   └── Http
+│       ├── Controllers         コントローラを格納するディレクトリ
+│       └── routes.php          ルートの定義ファイル
+├── public                      ドキュメントルートディレクトリ
+│   └── index.php               アプリケーションの起動ファイル
+├── resources                   リソースを格納するディレクトリ
+│   └── views                   ビューを格納するディレクトリ
+├─── vendor                     パッケージライブラリを格納するディレクトリ
+└─── composer.json              composer でインストールしたパッケージの一覧
 </pre>
       
       <h3>ライブコーディング</h3>
@@ -108,10 +100,12 @@ clock
 # 修正箇所
 
 lesson/framework/clock
-  src
-    routes.php
-  tamplates
-    omikuji.phtml
+  app
+    Http
+      routes.php
+  resources
+    views
+      clock.blade.php
 </pre>
     </section>
     
@@ -183,9 +177,8 @@ lesson/framework/refactoring
     <section>
       <h2>参考ページ</h2>
       <ul>
-        <li><a href="https://www.slimframework.com/docs/tutorial/first-app.html">Slim - First Application Walkthrough</a></li>
-        <li><a href="http://blog.orepedia.com/entry/2015/12/07/000000">Slimフレームワークの利用（基本的な処理）</a></li>
-        <li><a href="http://qiita.com/asaokamei/items/f915a625cb4d3f9b38de">Slim 3 Frameworkリリースされたので、ざっと紹介</a></li>
+        <li><a href="https://laravel.com/">Laravel 公式サイト</a></li>
+        <li><a href="http://dotinstall.com/lessons/basic_laravel">ドットインストール - Laravel5 入門</a></li>
       </ul>
     </section>
   </div><!-- #wrapper-->

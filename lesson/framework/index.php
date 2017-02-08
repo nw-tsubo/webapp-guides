@@ -145,11 +145,13 @@ lesson/framework/clock
     <section id="refactoring">
       <h2>リファクタリング</h2>
       <p>上記のおみくじアプリをリファクタリング（体質改善）します</p>
+      <a href="refactoring/public">おみくじアプリ</a>
       
       <h3>ポイント</h3>
       <ul>
         <li>routes.php に記述されているビジネスロジックをモデルクラスに切り出す</li>
         <li>routes.php に記述されているロジックをコントローラクラスに切り出す</li>
+        <li>ビューのファイル名や格納ディレクトリをコントローラに合わせる</li>
         <li>ビューに記述されている HTML の共通部分をレイアウトに切り出す</li>
       </ul>
       
@@ -160,11 +162,18 @@ lesson/framework/clock
       <p>以下のディレクトリを御覧ください</p>
       <pre class="code">
 lesson/framework/refactoring
-  src
-    Model
-      Omikuji.php
-    routes.php
-  composer.json
+  app
+    Omikuji.php
+    Http
+      Controllers
+        OmikujiController.php
+      routes.php
+  resources
+    views
+      layouts
+        app.blade.php
+      omikuji
+        index.blade.php
 </pre>
     </section>
     

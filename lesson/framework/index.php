@@ -122,7 +122,7 @@ lesson/framework/clock
 # composer コマンドを使って slim プロジェクトを作成
 
 $ cd sandbox/framework
-$ composer create-project slim/slim-skeleton omikuji
+$ composer create-project --prefer-dist laravel/laravel omikuji
 ...
 $ cd omikuji
 $ ls -l
@@ -132,11 +132,13 @@ $ ls -l
       <h3>回答</h3>
       <p>以下のファイルを御覧ください</p>
       <pre class="code">
-lesson/framework/omikuji
-  src
-    routes.php
-  tamplates
-    omikuji.phtml
+lesson/framework/clock
+  app
+    Http
+      routes.php
+  resources
+    views
+      omikuji.blade.php
 </pre>
     </section>
     
